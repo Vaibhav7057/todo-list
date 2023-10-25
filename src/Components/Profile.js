@@ -10,10 +10,12 @@ const Profile = () => {
 
   return (
     isAuthenticated && (
-      <div>
+      <div class="card" style={{ width: 18 + "rem" }}>
         <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
+        <div class="card-body">
+          <h2>{user.name}</h2>
+          <p>{user.email}</p>
+        </div>
       </div>
     )
   );
